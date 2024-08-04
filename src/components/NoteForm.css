@@ -1,0 +1,98 @@
+.note-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.note-form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.note-form-input,
+.note-form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.note-form-input {
+  font-size: 16px;
+}
+
+.note-form-textarea {
+  font-size: 16px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.note-form-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-form-color-picker {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.note-form-file-input {
+  border: none;
+}
+
+.note-form-image-preview {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 4px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+.note-form-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-form-button:hover {
+  background-color: #0056b3;
+}
+
+.note-form-error {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .note-form-controls {
+    align-items: flex-start;
+  }
+
+  .note-form-input,
+  .note-form-textarea {
+    font-size: 14px;
+  }
+
+  .note-form-button {
+    font-size: 14px;
+  }
+}
